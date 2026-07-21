@@ -83,11 +83,11 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
 
     e.preventDefault();
 
-    emailjs.sendForm(
-        "service_c69dwt4",
-        "template_ntnrwy5",
-        this
-    )
+   emailjs.sendForm(
+    "service_97u4bsr",
+    "template_ntnrwy5",
+    this
+)
     .then(function () {
 
         alert("✅ Message sent successfully!");
