@@ -79,20 +79,28 @@ function erase() {
 }
 
 type();
-document.getElementById("contact-form").addEventListener("submit", function(e) {
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+
     e.preventDefault();
 
     emailjs.sendForm(
         "service_c69dwt4",
-        "vfwlgos",
+        "template_ntnrwy5",
         this
     )
-    .then(function() {
+    .then(function () {
+
         alert("✅ Message sent successfully!");
+
         document.getElementById("contact-form").reset();
+
     })
-    .catch(function(error) {
-        console.log(error);
+    .catch(function (error) {
+
+        console.log("EmailJS Error:", error);
+
         alert("❌ Failed to send message.");
+
     });
+
 });
