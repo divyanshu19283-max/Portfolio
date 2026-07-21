@@ -228,7 +228,19 @@ View Project
 
 <p>Let's build something amazing together 🚀</p>
 
+<form id="contact-form">
 
+<input type="text" name="from_name" required>
+
+<input type="email" name="from_email" required>
+
+<textarea name="message" required></textarea>
+
+<button type="submit">
+Send Message
+</button>
+
+</form>
 
 <input
 type="text"
@@ -252,12 +264,10 @@ Send Message
 </button>
 
 </form>
-<form id="contact-form"></form>
 
 </div>
 
 </section>
-
 
 <footer>
 
@@ -274,9 +284,10 @@ Send Message
 
 <script>
 emailjs.init({
-    publicKey: "..."
+    publicKey: "j9E9x1BpuFwOVqaMg"
 });
 </script>
-<script src="script.js"></script>   
+
+<script src="script.js"></script> 
 </body>
 </html>

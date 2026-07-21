@@ -79,32 +79,20 @@ function erase() {
 }
 
 type();
-document
-.getElementById("contact-form")
-.addEventListener("submit", function(e){
-
+document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
     emailjs.sendForm(
-    "...",
-    "...",
-    this
-)
-    .then(function(){
-
+        "service_c69dwt4",
+        "vfwlgos",
+        this
+    )
+    .then(function() {
         alert("✅ Message sent successfully!");
-
-        document
-        .getElementById("contact-form")
-        .reset();
-
+        document.getElementById("contact-form").reset();
     })
-    .catch(function(error){
-
-        alert("❌ Failed to send message.");
-
+    .catch(function(error) {
         console.log(error);
-
+        alert("❌ Failed to send message.");
     });
-
 });
